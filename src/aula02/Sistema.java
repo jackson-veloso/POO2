@@ -1,9 +1,7 @@
 package aula02;
 
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Sistema {
     public static void main(String[] args) {
@@ -40,7 +38,10 @@ public class Sistema {
             System.out.println("Aluno: " + aluno.getNome());
         }
 
-
+        Collections.sort(turmaJava.getAlunos());
+        Collections.sort(turmaJS.getAlunos());
+        System.out.println(turmaJava.getAlunos());
+        System.out.println(turmaJS.getAlunos());
     }
 
     public static <T extends Aluno> void cadastrarAluno(T aluno, Turma<T> turma){
