@@ -13,3 +13,6 @@ Sistema de Educação a Distância - Parte 2
 - Criar a classe Supervisao, que terá o método analisaFrequência que utiliza o método de ordem alfabética
 - Criar a classe Pedagogico, que terá o método analisaEvolucaoAcademica que utiliza o método com a lista ordenada
   por matrícula.
+
+
+  https://www.alura.com.br/artigos/ordenando-colecoes-com-comparable-e-comparator

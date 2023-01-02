@@ -1,6 +1,8 @@
 package aula02;
 
-public class Aluno extends Pessoa {
+import java.util.Comparator;
+
+public class Aluno extends Pessoa implements Comparator<Aluno> {
     private String matricula;
     public Aluno(String nome, String matricula) {
 
@@ -21,4 +23,18 @@ public class Aluno extends Pessoa {
                 "nome='" + super.getNome() + '\'' +
                 '}';
     }
+
+    @Override
+    public int compare(Aluno o1, Aluno o2) {
+        return o1.getMatricula().compareTo(o2.getMatricula());
+    }
+
+//    @Override
+//    public int compareTo(Pessoa o) {
+//
+//        return this.nome.compareTo(o.getNome());
+//    }
+
+
+
 }
