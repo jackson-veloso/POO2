@@ -7,6 +7,16 @@ public class Turma<T extends Aluno> {
     private List<T> alunos = new ArrayList<>();
     private Professor professor;
 
+    public Turma(List<T> alunos, Professor professor) {
+        this.alunos = alunos;
+        this.professor = professor;
+    }
+
+    public Turma() {
+
+    }
+
+
     public List<T> getAlunos() {
         return alunos;
     }
