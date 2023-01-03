@@ -23,10 +23,14 @@ public class Main {
         secretaria.matricula(alunoJS2,turmaJS);
         secretaria.matricula(alunoJS3,turmaJS);
 
+        //System.out.println(secretaria.listarAlunos(turmaJava));
+        //System.out.println(secretaria.listarAlunosPorMatricula(turmaJS));
 
-        //MatriculaComparator comparator = new MatriculaComparator();
-        System.out.println(secretaria.listarAlunos(turmaJava));
-        System.out.println(secretaria.listarAlunosPorMatricula(turmaJS));
+        Supervisao supervisao = new Supervisao();
+        supervisao.analisaFrequencia(turmaJava);
+
+        Pedagogico pedagogico = new Pedagogico();
+        pedagogico.analisaEvolucaoAcademica(turmaJS);
 
 
 

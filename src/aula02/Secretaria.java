@@ -29,10 +29,12 @@ public class Secretaria {
     }
 
     public String getAlunoInfo(Aluno aluno){
-        StringBuilder dadosAluno = new StringBuilder();
-        dadosAluno.append("Nome: ").append(aluno.getNome())
-                .append(", Matricula: ").append(aluno.getMatricula());
-        return dadosAluno.toString();
+//        StringBuilder dadosAluno = new StringBuilder();
+//        dadosAluno.append("Aluno: ").append(aluno.getNome())
+//                .append(", Matricula: ").append(aluno.getMatricula())
+//                .append(", Frequência: ").append(aluno.getFrequencia());
+//        return dadosAluno.toString();
+        return aluno.toString();
     }
 
     public <T extends Aluno> List<String> listarAlunos(Turma<T> turma){
