@@ -3,6 +3,7 @@ package aula02;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Secretaria {
@@ -37,6 +38,17 @@ public class Secretaria {
     public <T extends Aluno> List<String> listarAlunos(Turma<T> turma){
         List<String> alunos = new ArrayList<>();
         Collections.sort(turma.getAlunos());
+        for (Aluno aluno : turma.getAlunos()) {
+            alunos.add(getAlunoInfo(aluno));
+        }
+
+        return alunos;
+    }
+
+    public <T extends Aluno> List<String> listarAlunosPorMatricula(Turma<T> turma){
+        MatriculaComparator comparator = new MatriculaComparator();
+        List<String> alunos = new ArrayList<>();
+        Collections.sort(turma.getAlunos(),comparator);
         for (Aluno aluno : turma.getAlunos()) {
             alunos.add(getAlunoInfo(aluno));
         }

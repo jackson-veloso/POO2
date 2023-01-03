@@ -24,8 +24,9 @@ public class Main {
         secretaria.matricula(alunoJS3,turmaJS);
 
 
+        //MatriculaComparator comparator = new MatriculaComparator();
         System.out.println(secretaria.listarAlunos(turmaJava));
-        System.out.println(secretaria.listarAlunos(turmaJS));
+        System.out.println(secretaria.listarAlunosPorMatricula(turmaJS));
 
 
 
